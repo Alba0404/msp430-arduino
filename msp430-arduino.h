@@ -15,9 +15,9 @@
 
 
 /**
- * \fn pinMode
+ * \fn void pinMode(int pin, int mode)
  * \brief Set the mode of a pin (INPUT/OUTPUT)
- * \param pin The pin of the port 2 to modify (0-7).
+ * \param pin The pin to set the mode (10-17/20-27).
  * \param mode The mode to set (INPUT/OUTPUT)
  * By default pull-up resistor is activated.
  */
@@ -26,9 +26,9 @@ void pinMode(int pin, int mode);
 
 
 /**
- * \fn digitalWrite
+ * \fn void digitalWrite(int pin, int value)
  * \brief Write a digital value on a pin.
- * \param pin The pin to modify.
+ * \param pin The pin to modify (10-17/20-27).
  * \param value The digital value to write (LOW/HIGH)
  */
 void digitalWrite(int pin, int value);
@@ -36,9 +36,9 @@ void digitalWrite(int pin, int value);
 
 
 /**
- * \fn digitalRead
- * \brief Read the value from the given digital pin.
- * \param pin The pin to read.
- * \return value The digital value on the pin (LOW/HIGH)
+ * \fn int digitalRead(int pin)
+ * \brief Read the value of the given digital pin.
+ * \param pin The pin to read (10-17/20-27).
+ * \return value The digital value of the pin (0/1) or -1 if wrong pin.
  */
 int digitalRead(int pin);
