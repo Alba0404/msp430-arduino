@@ -11,15 +11,15 @@
 #define HIGH 1
 #define INPUT  0
 #define OUTPUT 1
+#define INPUT_PULLUP 2
 
 
 
 /**
  * \fn void pinMode(int pin, int mode)
- * \brief Set the mode of a pin (INPUT/OUTPUT)
+ * \brief Set the mode of a pin (INPUT/OUTPUT/INPUT_PULLUP)
  * \param pin The pin to set the mode (10-17/20-27).
- * \param mode The mode to set (INPUT/OUTPUT)
- * By default pull-up resistor is activated.
+ * \param mode The mode to set (INPUT/OUTPUT/INPUT_PULLUP)
  */
 void pinMode(int pin, int mode);
 
