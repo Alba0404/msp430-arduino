@@ -2,7 +2,7 @@
  * \file msp430-arduino.c
  * \date 4 november 2021
  * \author Alexandre BARRAT
- * \version 1.1
+ * \version 1.2
  */
 
 #include <msp430.h>
@@ -62,15 +62,15 @@ void pinMode(int pin, int mode){
         case OUTPUT:
             P2DIR |= bit;       // Set the pin to output
             P2OUT &= ~bit;      // Set the output to 0
-			break;
-		case INPUT:
-			P2DIR &= ~bit;      // Set the pin to input
+            break;
+        case INPUT:
+            P2DIR &= ~bit;      // Set the pin to input
             P2REN |= bit;       // Enable intern resistor
             P2OUT &= ~bit;      // Set the intern resistor as pull-down
-			break;
-		default:
-			break;
-		}
+            break;
+        default:
+            break;
+        }
         break;
     default:
         break;
@@ -134,4 +134,41 @@ int digitalRead(int pin){
     default:
         break;
     }
+}
+
+
+
+/**
+ * \fn void shiftOut(dataPin, clockPin, bitOrder, value)
+ * \brief Shifts out a byte of data one bit at a time.
+ * \param dataPin The pin to send data (10-17/20-27).
+ * \param clockPin The pin for the clock (10-17/20-27).
+ * \param bitOrder The first bit to shift : most or least significant (MSBFIRST/LSBFIRST).
+ */
+void shiftOut(int dataPin, int clockPin, int bitOrder, unsigned char value){
+    if(dataPin < 10 || (17 < dataPin && dataPin < 20) || 27 < dataPin) return;
+    if(clockPin < 10 || (17 < clockPin && clockPin < 20) || 27 < clockPin) return;
+    if(bitOrder != MSBFIRST && bitOrder != LSBFIRST) return;
+    pinMode(dataPin, OUTPUT);
+    pinMode(clockPin, OUTPUT);
+    int BYTE_SIZE = 8;
+    int i, t;
+    unsigned char c;
+    for(i=BYTE_SIZE; i>0; i--){
+        if(bitOrder == MSBFIRST){
+            c = value >> i-1;
+        }
+        else{
+            c = value >> BYTE_SIZE-i;
+        }
+        c &= 0x01;
+        digitalWrite(dataPin, (int)c);
+        digitalWrite(clockPin, HIGH);
+        for(t=32000; t>0; t--);
+        digitalWrite(clockPin, LOW);
+        for(t=32000; t>0; t--);
+    }
+    digitalWrite(dataPin, LOW);
+    digitalWrite(clockPin, LOW);
+    return;
 }
