@@ -7,13 +7,13 @@ a. __Adapted Material__ means material subject to Copyright and Similar Rights t
 
 b. __Adapter's License__ means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
 
-c. __BY-NC-SA Compatible License__ means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.
+c. __BY-NC-SA Compatible License__ means a license listed at [creativecommons.org/compatiblelicenses](https://creativecommons.org/compatiblelicenses), approved by Creative Commons as essentially the equivalent of this Public License.
 
 d. __Copyright and Similar Rights__ means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
 
 e. __Effective Technological Measures__ means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
 
-f. __Exceptions and Limitations_ means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
+f. __Exceptions and Limitations__ means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
 
 g. __License Elements__ means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution, NonCommercial, and ShareAlike.
 
@@ -29,13 +29,13 @@ l. __Share__ means to provide material to the public by any means or process tha
 
 m. __Sui Generis Database Rights__ means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
 
-n. __You__ means the individual or entity exercising the Licensed Rights under this Public License. _Your__ has a corresponding meaning.
+n. __You__ means the individual or entity exercising the Licensed Rights under this Public License. __Your__ has a corresponding meaning.
 
 ## Section 2 – Scope.
 
 a. __License grant.__
-   1. Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
-      A. reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and
+   1. Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:  
+	  A. reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and  
       B. produce, reproduce, and Share Adapted Material for NonCommercial purposes only.
    
    2. <u>Exceptions and Limitations</u>. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
@@ -44,9 +44,9 @@ a. __License grant.__
    
    4. <u>Media and formats; technical modifications allowed</u>. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
    
-   5. <u>Downstream recipients</u>.
-      A. <u>Offer from the Licensor – Licensed Material</u>. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
-      B. <u>Additional offer from the Licensor – Adapted Material</u>. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.
+   5. <u>Downstream recipients</u>.  
+      A. <u>Offer from the Licensor – Licensed Material</u>. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.  
+      B. <u>Additional offer from the Licensor – Adapted Material</u>. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.  
       C. <u>No downstream restrictions</u>. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
    
    6. <u>No endorsement</u>. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
@@ -65,6 +65,7 @@ Your exercise of the Licensed Rights is expressly made subject to the following 
 a. __Attribution.__
 
    1. If You Share the Licensed Material (including in modified form), You must:
+
       A. retain the following if it is supplied by the Licensor with the Licensed Material:
          1. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
          2. a copyright notice;
@@ -73,7 +74,7 @@ a. __Attribution.__
          5. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
       
 	  B. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
-      
+	  
 	  C. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
    
    2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
