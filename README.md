@@ -62,7 +62,7 @@ This table groups Arduino's functions and there equivalent for MSP430.
 | Bits and Bytes | lowByte()            |                |                  |
 | Interrupts     | interrupts()         |                |                  |
 | Interrupts     | noInterrupts()       |                |                  |
-| Communication  | Serial()             |                |                  |
+
 
 ## Example
 ```c

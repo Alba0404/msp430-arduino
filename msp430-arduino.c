@@ -131,8 +131,6 @@ int digitalRead(int pin){
         if((P2IN & bit) == bit) return HIGH;
         else                    return LOW;
         break;
-    default:
-        break;
     }
 }
 
