@@ -15,6 +15,8 @@
 #define MSBFIRST 7
 #define LSBFIRST 0
 
+#define LED_BUILTIN 10
+
 
 
 /**
