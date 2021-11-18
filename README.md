@@ -1,6 +1,6 @@
 # MSP430-Arduino
 
-This project is a simple C library adding some Arduino functions to the MSP430 board of Texas Instrument.
+This project is a simple C library adding some Arduino elements to the Launchpad board of Texas Instrument based on the MSP430.
 Functions are based on [Arduino References](https://www.arduino.cc/reference/en/)
 
 Code is commented but you can find documentation [here](./msp430-arduino.pdf).
