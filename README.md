@@ -84,6 +84,7 @@ void main(){
 
 
 ## Changelog
+* 1.2 : Add shiftOut() and BUILTIN_LED
 * 1.1 : Add port 1 to digital I/O functions
 * 1.0 : Only port 2 digital I/O functions
 
