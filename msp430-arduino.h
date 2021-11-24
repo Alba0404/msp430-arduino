@@ -51,3 +51,20 @@ int digitalRead(int pin);
  * \param bitOrder The first bit to shift : most or least significant (MSBFIRST/LSBFIRST).
  */
 void shiftOut(int dataPin, int clockPin, int bitOrder, unsigned char value);
+
+/**
+ * \fn void tone(int pin, unsigned int frequency)
+ * \brief Generates a square wave of the specified frequency (and 50% duty cycle) on a pin.
+ * \param pin The pin on which to generate the tone.
+ * \param frequency The frequency of the tone in hertz.
+ */
+void tone(int pin, unsigned int frequency);
+
+/**
+ * \fn void tone(int pin, unsigned int frequency, unsigned long duration)
+ * \brief Generates a square wave of the specified frequency (and 50% duty cycle) on a pin.
+ * \param pin The pin on which to generate the tone.
+ * \param frequency The frequency of the tone in hertz.
+ * \param duration The duration of the tone in milliseconds.
+ */
+void tone(int pin, unsigned int frequency, unsigned long duration);

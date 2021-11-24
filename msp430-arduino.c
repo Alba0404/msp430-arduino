@@ -153,12 +153,8 @@ void shiftOut(int dataPin, int clockPin, int bitOrder, unsigned char value){
     int i, t;
     unsigned char c;
     for(i=BYTE_SIZE; i>0; i--){
-        if(bitOrder == MSBFIRST){
-            c = value >> i-1;
-        }
-        else{
-            c = value >> BYTE_SIZE-i;
-        }
+        if(bitOrder == MSBFIRST) c = value >> i-1;
+        else                     c = value >> BYTE_SIZE-i;
         c &= 0x01;
         digitalWrite(dataPin, (int)c);
         digitalWrite(clockPin, HIGH);
@@ -170,3 +166,21 @@ void shiftOut(int dataPin, int clockPin, int bitOrder, unsigned char value){
     digitalWrite(clockPin, LOW);
     return;
 }
+
+
+
+/**
+ * \fn void tone(int pin, unsigned int frequency)
+ * \brief Generates a square wave of the specified frequency (and 50% duty cycle) on a pin.
+ * \param pin The pin on which to generate the tone.
+ * \param frequency The frequency of the tone in hertz.
+ */
+void tone(int pin, unsigned int frequency){
+	unsigned int delay = 1 / frequency;
+	pinMode(pin, OUTPUT);
+	while(1){
+		
+	}
+}
+
+
