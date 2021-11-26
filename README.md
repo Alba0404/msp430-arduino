@@ -9,7 +9,7 @@ Code is commented but you can find documentation [here](./msp430-arduino.pdf).
 ## Functions
 This table groups Arduino's functions and there equivalent for MSP430.
 
-| Category       | Arduino              | MSP430         | C Header         |
+| Category       | Arduino              | MSP430         | Header           |
 | -------------- | -------------------- | -------------- | ---------------- |
 | Digital I/O    | digitalRead()        | digitalRead()  | msp430-arduino.h |
 | Digital I/O    | digitalWrite()       | digitalWrite() | msp430-arduino.h |
@@ -27,14 +27,17 @@ This table groups Arduino's functions and there equivalent for MSP430.
 | Time           | delayMicroseconds()  |                |                  |
 | Time           | micros()             |                |                  |
 | Time           | millis()             |                |                  |
-| Math           | abs()                | abs()          | stdlib.h         |
-| Math           | constrain()          |                |                  |
+| Math           | abs()                | abs()          | msp430-arduino.h |
+| Math           | constrain()          | constrain()    | msp430-arduino.h |
 | Math           | map()                |                |                  |
-| Math           | max()                | fmax()         | math.h           |
-| Math           | min()                | fmin()         | math.h           |
+| Math           | max()                | max()          | msp430-arduino.h |
+| Math           | min()                | min()          | msp430-arduino.h |
 | Math           | pow()                | pow()          | math.h           |
-| Math           | sq()                 |                |                  |
+| Math           | sq()                 | sq()           | msp430-arduino.h |
 | Math           | sqrt()               | sqrt()         | math.h           |
+| Math           | round()              | round()        | msp430-arduino.h |
+| Trigonometry   | radians()            | radians()      | msp430-arduino.h |
+| Trigonometry   | degrees()            | degrees()      | msp430-arduino.h |
 | Trigonometry   | cos()                | cos()          | math.h           |
 | Trigonometry   | sin()                | sin()          | math.h           |
 | Trigonometry   | tan()                | tan()          | math.h           |
@@ -53,13 +56,14 @@ This table groups Arduino's functions and there equivalent for MSP430.
 | Characters     | isWhitespace()       | isblank()      | ctype.h          |
 | Random Numbers | random()             | rand()         | stdlib.h         |
 | Random Numbers | randomSeed()         | srand()        | stdlib.h         |
-| Bits and Bytes | bit()                |                |                  |
-| Bits and Bytes | bitClear()           |                |                  |
-| Bits and Bytes | bitRead()            |                |                  |
-| Bits and Bytes | bitSet()             |                |                  |
-| Bits and Bytes | bitWrite()           |                |                  |
-| Bits and Bytes | highByte()           |                |                  |
-| Bits and Bytes | lowByte()            |                |                  |
+| Bits and Bytes | bit()                | bit()          | msp430-arduino.h |
+| Bits and Bytes | bitClear()           | bitClear()     | msp430-arduino.h |
+| Bits and Bytes | bitRead()            | bitRead()      | msp430-arduino.h |
+| Bits and Bytes | bitSet()             | bitSet()       | msp430-arduino.h |
+| Bits and Bytes | bitWrite()           | bitWrite()     | msp430-arduino.h |
+| Bits and Bytes | bitToggle()          | bitToggle()    | msp430-arduino.h |
+| Bits and Bytes | highByte()           | highByte()     | msp430-arduino.h |
+| Bits and Bytes | lowByte()            | lowByte()      | msp430-arduino.h |
 | Interrupts     | interrupts()         |                |                  |
 | Interrupts     | noInterrupts()       |                |                  |
 
