@@ -116,7 +116,7 @@ void digitalWrite(int pin, int value){
  * \return value The digital value of the pin (0/1) or -1 if wrong pin.
  */
 int digitalRead(int pin){
-    if(pin < 10 || (17 < pin && pin < 20) || 27 < pin) return -1;
+    if(pin < 10 || (17 < pin && pin < 20) || 27 < pin) return LOW;
 
     int port = pin / 10;
     pin = pin % 10;
