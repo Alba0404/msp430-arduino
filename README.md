@@ -70,6 +70,7 @@ This table groups Arduino's functions and there equivalent for MSP430.
 
 ## Example
 ```c
+#include <msp430.h>
 #include "msp430-arduino.h"
 
 #define PIN_LED    12  // A LED on the pin 2 of the port 1
