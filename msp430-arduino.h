@@ -1,9 +1,13 @@
 /**
  * \file msp430-arduino.h
- * \date 4 november 2021
+ * \date 1 march 2022
  * \author Alexandre BARRAT
- * \version 1.2
+ * \version 1.3
  */
+
+#ifndef MSP430_ARDUINO_H_
+#define MSP430_ARDUINO_H_
+
 #include <math.h>
 
 #define LOW  0
@@ -17,6 +21,8 @@
 #define LSBFIRST 0
 
 #define LED_BUILTIN 10
+
+#define PWM_DELAY 2040
 
 // Maths constants
 #define PI 3.1415926535897932384626433832795
@@ -78,3 +84,12 @@ int digitalRead(int pin);
  */
 void shiftOut(int dataPin, int clockPin, int bitOrder, unsigned char value);
 
+/**
+ * \fn void analogWrite(int pin, int value)
+ * \brief Write a PWM to the given pin. The frequency of the PWM is 490Hz.
+ * \param pin The pin to write PWM (10-17/20-27).
+ * \param value Duty cycle of the PWM (0-255).
+ */
+void analogWrite(int pin, int value);
+
+#endif
